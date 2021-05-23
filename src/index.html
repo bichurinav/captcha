@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .captcha {
+            border: 1px solid silver;
+            margin: 10px 0;
+            display: none;
+        }
+        .loader {
+            width: 177px;
+            height: 80px;
+            position: relative;
+        }
+        .loader img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+        }
+    </style>
+    <title>Captcha</title>
+</head>
+<body>
+    <h1>Captcha</h1>
+    <form id="form">
+        <canvas id="captcha" class="captcha"></canvas>
+        <div class="loader">
+            <img src="load.svg" alt="">
+        </div>
+        <input placeholder="Send: Captcha" name="captcha" type="text">
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
